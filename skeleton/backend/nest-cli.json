@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "plugins": ["@nestjs/swagger",
+    {
+      "name": "@automapper/classes/transformer-plugin",
+      "options": {
+          "modelFileNameSuffix": [".dto.ts", ".entity.ts"]
+      }
+  }
+  ]
+  }
+}
